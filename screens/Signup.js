@@ -162,7 +162,7 @@ export default class signup extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "#F0FFF0",
     height: "100%",
     width: "100%"
   },
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   },
   func: {
     fontSize: 35,
-    color: "blue",
+    color: "#006400",
     position: "relative",
     left: 140,
     top: 20

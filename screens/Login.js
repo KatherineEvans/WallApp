@@ -153,13 +153,13 @@ const styles = StyleSheet.create({
     fontSize: 30,
     position: "relative",
     bottom: 140,
-    color: "blue"
+    color: "#006400"
   },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white"
+    backgroundColor: "#F0FFF0"
   },
   email: {
     fontSize: 20,

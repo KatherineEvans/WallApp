@@ -16,17 +16,15 @@ class WelcomeMessage extends Component {
   render() {
     return (
       <View style={styles.app}>
-        <Container style={styles.topSpace}>
+      <View style={styles.image}>
+        <Image
+          source={require('../Images/2018_wall-decor_banner.jpg')} />
+        </View>
+        <Container>
           <View>
             <Text style={styles.textTop}>Welcome to Nail'd It!</Text>
           </View>
         </Container>
-      <Container style={styles.container}>
-        <View style={styles.image}>
-        <Image
-          source={require('../Images/2018_wall-decor_banner.jpg')} />
-        </View>
-      </Container>
         <View style={styles.welcomeTextBottom}>
         <Text style={styles.textBottom}>Welcome to Nail'd It!</Text>
         <Text style={styles.textBottom}>To get started, please log in or sign up below </Text>
@@ -38,26 +36,22 @@ class WelcomeMessage extends Component {
 
 const styles = StyleSheet.create({
   app: {
-    flex: 0, 
     alignSelf: 'stretch',
-    height: 550,
+    height: '100%',
     flexDirection: 'column',
   },
   container: {
-    flex: 1,
     position: 'absolute',
     alignSelf: 'stretch',
     textAlign: 'center',
     backgroundColor: "#FFF", 
     height: 300,
   }, 
-  image: {
-    flex: 2, 
-    width: 300,
-    textAlign: 'center',
+  image: { 
+    height: 100,
+    // textAlign: 'center',
   }, 
   welcomeTextBottom: {
-    flex: 4,
     alignItems: 'center',
     color: 'white',
     justifyContent: 'center',
@@ -71,6 +65,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 30,
     textAlign: 'center',
+    alignItems: 'flex-start',
   },
 });
 
