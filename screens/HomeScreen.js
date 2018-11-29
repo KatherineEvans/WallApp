@@ -35,6 +35,6 @@ const AppStackNavigator = createStackNavigator(
   },
 
   {
-    initialRouteName: "RealHomeScreen"
+    initialRouteName: "App"
   }
 );

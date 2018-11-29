@@ -24,9 +24,15 @@ export default class Application extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <View style={styles.navHead}>
       <NavHead />
+      </View>
+      <View style={styles.content}>
       <WelcomeMessage />
+      </View>
+      <View style={styles.navFoot}>
       <NavFootLanding />
+      </View>
       </View>
     );
   }
@@ -34,12 +40,18 @@ export default class Application extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#006400',
-    // alignItems: 'center',
+    height: '100%',
     justifyContent: 'center',
   },
-  greenTop: {
+  navHead: {
+    flex: 2, 
+  },
 
+  Content: {
+    flex: 3,
+  },
+  navFoot: {
+    flex: 1,
   }
 });
